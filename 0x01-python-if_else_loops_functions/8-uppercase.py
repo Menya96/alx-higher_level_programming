@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 
-
 def uppercase(str):
     result = ''
     for char in str:
@@ -8,5 +7,4 @@ def uppercase(str):
             result += chr(ord(char) - 32)
         else:
             result += char
-    print("{:s}".format(result))
-    
+    print("{:s}".format(result))   
