@@ -1,0 +1,38 @@
+The ``text_indentation`` module
+===============================
+
+Importing function ``text_indentation``:
+    >>> text_indentation = __import__('5-text_indentation').text_indentation
+
+Test Cases:
+    >>> text_indentation("Cool?")
+    Cool?
+    <BLANKLINE>
+
+    >>> text_indentation("You. ")
+    You.
+    <BLANKLINE>
+
+    >>> text_indentation("Ingredients: sauce.")
+    Ingredients:
+    <BLANKLINE>
+    sauce.
+    <BLANKLINE>
+
+    >>> text_indentation("  wow.")
+    wow.
+    <BLANKLINE>
+
+    >>> text_indentation()
+    Traceback (most recent call last):
+        ...
+    TypeError: text_indentation() missing 1 required positional argument: 'text'
+
+    >>> text_indentation(8)
+    Traceback (most recent call last):
+        ...
+    TypeError: text must be a string
+
+    >>> text_indentation("?")
+    ?
+    <BLANKLINE>
